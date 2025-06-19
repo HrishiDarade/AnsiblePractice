@@ -1,0 +1,6 @@
+---
+- name: Preform common server setup
+  hosts: localhost
+  become: yes
+  roles:
+    - common_setup

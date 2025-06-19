@@ -1,0 +1,12 @@
+---
+- name: ensure vim is installed
+  apt:
+    name: vim
+    state: present
+  become: yes
+
+- name: install tree
+  apt:
+    name: tree
+    state: latest
+  become: yes
